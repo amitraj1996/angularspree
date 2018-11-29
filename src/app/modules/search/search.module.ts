@@ -5,10 +5,9 @@ import { SearchRoutingModule } from './search-routing.module';
 import { SharedModule } from './../../shared/index';
 
 import { COMPONENTS } from './';
-
 @NgModule({
   declarations: [
-    ...COMPONENTS
+    ...COMPONENTS,
   ],
   imports: [
     CommonModule,
