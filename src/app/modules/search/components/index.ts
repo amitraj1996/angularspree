@@ -1,5 +1,7 @@
-import { COMPONENTS as SEARCH_FILTER_CONTAINER_COMPONENTS } from './search-filters-container/index';
+import * as searchComp from './search-filters-container'
+
+export * from './search-filters-container';
 
 export const SEARCH_COMPONENTS = [
-  ...SEARCH_FILTER_CONTAINER_COMPONENTS
+  ...searchComp.COMPONENTS
 ];
