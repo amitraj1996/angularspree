@@ -46,7 +46,6 @@
     "@ngrx/core": "^1.2.0",
     "@ngrx/effects": "^6.1.2",
     "@ngrx/entity": "^6.1.2",
-    "@ngrx/router-store": "^6.1.2",
     "@ngrx/store": "^6.1.2",
     "@ngu/carousel": "^1.5.4",
     "@nguniversal/common": "^7.0.2",

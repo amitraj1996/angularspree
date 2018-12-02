@@ -1,0 +1,16 @@
+$colors: red,
+orange,
+yellow,
+green,
+blue,
+purple;
+$repeat: 10; // How often you want the pattern to repeat.
+// Warning: a higher number outputs more CSS.
+@for $i from 1 through $repeat {
+  app-filter-summary-filter:nth-child(#{length($colors)}n+#{$i}) {
+    border: 1px solid lighten(nth($colors, random(length($colors))), 20%);
+    margin: 3px;
+    padding: 0 1rem;
+    border-radius: 20px;
+  }
+}

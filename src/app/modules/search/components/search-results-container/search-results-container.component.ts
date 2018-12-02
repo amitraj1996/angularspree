@@ -7,7 +7,6 @@ import { Product } from '../../../../core/models';
   styleUrls: ['./search-results-container.component.scss']
 })
 export class SearchResultsContainerComponent implements OnInit {
-  @Input() searchResults: Array<Product> = new Array(10);
 
   constructor() { }
 
