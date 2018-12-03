@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-filter-summary-filter',
@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./filter-summary-filter.component.scss']
 })
 export class FilterSummaryFilterComponent implements OnInit {
+  @Input() filter;
+  @Output() removeFilter = new EventEmitter();
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  removeFilterClicked() {
+    this.removeFilter.emit();
   }
 
 }
