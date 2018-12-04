@@ -8,7 +8,6 @@ import { filter } from 'rxjs/operators';
 })
 export class SingleSelectionFilterComponent implements OnInit {
   @Input() filter;
-  @Input() title;
 
   constructor() { }
 

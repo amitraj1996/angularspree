@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-multiselect-filter',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./multiselect-filter.component.scss']
 })
 export class MultiselectFilterComponent implements OnInit {
+  @Input() filter;
 
   constructor() { }
 

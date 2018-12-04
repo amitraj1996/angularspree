@@ -46,6 +46,29 @@ export class SearchFiltersContainerComponent implements OnInit {
     ]
   };
 
+  brandFilter = {
+    'type': 'brand',
+    'selection': 'multiple',
+    'display_name': 'Brands',
+    'items': [
+      {
+        'id': 1,
+        'display_name': 'Roadsters',
+        'value': 'roadster'
+      },
+      {
+        'id': 2,
+        'display_name': 'Jack & Jones',
+        'value': 'jack_and_jones'
+      },
+      {
+        'id': 3,
+        'display_name': 'Signature',
+        'value': 'signature'
+      }
+    ]
+  };
+
   constructor() { }
 
   ngOnInit() {
