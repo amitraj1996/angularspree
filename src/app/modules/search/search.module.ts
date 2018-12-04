@@ -1,3 +1,4 @@
+import { NgxInputStarRatingModule } from '@ngx-lite/input-star-rating';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -13,6 +14,7 @@ import { COMPONENTS } from './';
   imports: [
     CommonModule,
     SearchRoutingModule,
+    NgxInputStarRatingModule,
 
     SharedModule
   ]

@@ -1,18 +1,4 @@
-$colors: red,
-orange,
-yellow,
-green,
-blue,
-purple;
-$repeat: 10; // How often you want the pattern to repeat.
-// Warning: a higher number outputs more CSS.
-@for $i from 1 through $repeat {
-  app-search-result-item:nth-child(#{length($colors)}n+#{$i}) {
-    background: lighten(nth($colors, random(length($colors))), 20%);
-  }
-}
-
-.results-liDummy {
+.results-li-dummy {
   display: block;
   min-width: 210px;
   max-width: 200px;

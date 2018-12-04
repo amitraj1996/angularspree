@@ -3,8 +3,6 @@
 @import '../../selected_theme_variables';
 .selected-theme {
   @import "header";
-  @import "badge";
-  @import "notify";
 
   input, button {
     &:focus {
