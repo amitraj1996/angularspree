@@ -1,3 +1,6 @@
 <legend class="h6 font-weight-bold">FILTERS</legend>
 <app-single-selection-filter [filter]="categoryFilter"></app-single-selection-filter>
 <app-multiselect-filter [filter]="brandFilter"></app-multiselect-filter>
+<div *ngFor="let optionFilter of optionFilters">
+  <app-multiselect-filter [filter]="optionFilter"></app-multiselect-filter>
+</div>

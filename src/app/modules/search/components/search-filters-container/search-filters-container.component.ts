@@ -69,6 +69,58 @@ export class SearchFiltersContainerComponent implements OnInit {
     ]
   };
 
+  optionFilters = [
+    {
+      'type': 'option',
+      'selection': 'multiple',
+      'display_name': 'Size',
+      'items': [
+         {
+            'id': 1,
+            'display_name': 'S',
+            'value': 'S'
+         },
+         {
+            'id': 2,
+            'display_name': 'M',
+            'value': 'M'
+         },
+         {
+            'id': 3,
+            'display_name': 'L',
+            'value': 'L'
+         },
+         {
+            'id': 4,
+            'display_name': 'X',
+            'value': 'X'
+         }
+      ]
+   },
+   {
+    'type': 'option',
+    'selection': 'multiple',
+    'display_name': 'Material',
+    'items': [
+       {
+          'id': 1,
+          'display_name': 'Cotton',
+          'value': 'cotton'
+       },
+       {
+          'id': 2,
+          'display_name': 'Crepe',
+          'value': 'crepe'
+       },
+       {
+          'id': 3,
+          'display_name': 'Silk',
+          'value': 'silk'
+       }
+    ]
+ }
+  ];
+
   constructor() { }
 
   ngOnInit() {
