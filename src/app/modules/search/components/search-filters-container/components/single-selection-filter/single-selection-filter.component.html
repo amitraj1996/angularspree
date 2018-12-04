@@ -1,0 +1,9 @@
+<ul class="list-group border border-left-0">
+  <small class="font-weight-bold py-4">{{title}}</small>
+  <li *ngFor="let child of filter.children" class="list-group-item border-0 p-0">
+    <label class="">
+      <input type="radio">
+      {{child.display_name}}
+    </label>
+  </li>
+</ul>
