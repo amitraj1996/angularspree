@@ -8,6 +8,7 @@ import { Product } from '../../../../../../core/models';
 })
 export class SearchResultListComponent implements OnInit {
   @Input() searchResults: Array<Product>;
+  dummyResults = new Array(5);
 
   constructor() { }
 

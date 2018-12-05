@@ -126,4 +126,7 @@ export class SearchFiltersContainerComponent implements OnInit {
   ngOnInit() {
   }
 
+  clearSearchFilters() {
+  }
+
 }
